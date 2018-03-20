@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using Flex;
 using Foundation;
 using UIKit;
 
@@ -23,6 +23,9 @@ namespace FlexButtonExemplo.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+            FlexButton.Init();
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

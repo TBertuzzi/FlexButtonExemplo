@@ -2,10 +2,50 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:FlexButtonExemplo"
-             x:Class="FlexButtonExemplo.MainPage">
+             xmlns:flex="clr-namespace:Flex.Controls;assembly=Flex"
+             x:Class="FlexButtonExemplo.MainPage" Padding="0,20,0,0">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <ScrollView>
+        <StackLayout>
+
+            <flex:FlexButton
+                x:Name="BotaoPadrao"
+                HorizontalOptions="Center"
+                WidthRequest="76"
+                HeightRequest="76"
+                CornerRadius="38"
+                Icon="iconeBotao.png"
+                ForegroundColor="#ffffff"
+                HighlightForegroundColor="#49516F"
+                BackgroundColor="#6279B8"
+                HighlightBackgroundColor="#8EA4D2"/>
+
+            <flex:FlexButton
+                x:Name="BotaoLateral"
+                HorizontalOptions="Center"
+                WidthRequest="300"
+                HeightRequest="76"
+                CornerRadius="20"
+                Icon="iconeBotao.png"
+                Text="Icone e Texto"
+                ForegroundColor="#ffffff"
+                HighlightForegroundColor="#49516F"
+                BackgroundColor="#6279B8"
+                HighlightBackgroundColor="#8EA4D2"/>
+
+            <flex:FlexButton
+                x:Name="BotaoTrasnparente"
+                HorizontalOptions="Center"
+                WidthRequest="76"
+                HeightRequest="76"
+                CornerRadius="38"
+                Icon="iconeBotao.png"
+                ForegroundColor="#6279B8"
+                HighlightForegroundColor="#ffffff"
+                BackgroundColor="Transparent"
+                HighlightBackgroundColor="#6279B8"/>
+
+        </StackLayout>
+    </ScrollView>
 
 </ContentPage>
